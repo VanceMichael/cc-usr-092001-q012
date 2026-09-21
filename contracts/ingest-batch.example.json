@@ -1,0 +1,18 @@
+{
+  "standard_id": "STD-LIVESTOCK",
+  "device_serial": "SCALE-001",
+  "items": [
+    {
+      "source_sequence": 1,
+      "animal_ref": "FARM-A/TAG-100",
+      "species": "poultry",
+      "trait_code": "body_weight",
+      "value": "1.230",
+      "unit": "kg",
+      "uncertainty": "0.005",
+      "occurred_at": "2026-09-19T09:30:00+08:00",
+      "protocol_ref": "PROTO-WEIGH-V3",
+      "payload_digest": "sha256:由删除payload_digest字段后的规范JSON计算"
+    }
+  ]
+}

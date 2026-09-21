@@ -1,0 +1,30 @@
+{
+  "version": "2026.1",
+  "effective_at": "2026-01-01T00:00:00+08:00",
+  "rules": {
+    "species": ["poultry", "swine"],
+    "traits": [
+      {
+        "code": "body_weight",
+        "species": "poultry",
+        "name": "体重",
+        "unit": "kg",
+        "decimals": 3,
+        "min_value": "0.01",
+        "max_value": "20",
+        "min_age_days": 1,
+        "max_age_days": 120
+      }
+    ],
+    "protocols": [
+      {"order": 1, "action": "fasten", "requirement": "禁食4小时"},
+      {"order": 2, "action": "weigh", "requirement": "连续两次读数差<1%"}
+    ],
+    "formats": [
+      {"field": "value", "type": "decimal-string", "required": true}
+    ],
+    "allowed_device_kinds": ["platform_scale", "ultrasound"],
+    "max_clock_skew_minutes": 60,
+    "max_batch_lag_hours": 720
+  }
+}
