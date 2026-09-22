@@ -1,5 +1,5 @@
 #!/bin/sh
 set -eu
-mkdir -p "${DATABASE_PATH%/*}"
-printf '%s
-' '当前基础服务不预设数据库结构。'
+: "${DATABASE_PATH:=./data}"
+mkdir -p "$DATABASE_PATH"
+printf '%s\n' "数据目录已就绪: $DATABASE_PATH（结构由服务首次写入时自动建立）"

@@ -1,8 +1,16 @@
 {
   "schema_version": "1",
-  "event_id": "EVENT-012-DEMO",
-  "subject_ref": "SUBJECT-012-DEMO",
-  "occurred_at": "2026-09-19T09:30:00+08:00",
-  "source_sequence": 1,
-  "payload_digest": "sha256:demo"
+  "org_ref": "ORG-DEMO",
+  "device_serial": "DEV-DEMO-001",
+  "format": "FMT-1",
+  "items": [
+    {
+      "subject_ref": "SUBJECT-012-DEMO",
+      "trait_code": "BACKFAT",
+      "value": "12.3",
+      "unit": "mm",
+      "occurred_at": "2026-09-19T09:30:00+08:00",
+      "source_sequence": 1
+    }
+  ]
 }
